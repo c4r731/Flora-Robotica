@@ -1,0 +1,6 @@
+- Collision detection
+	- Keine Funde bisher was Ast Kollisionen zeigen würde!
+- Body Rotation
+	- Problem mit der Z-Achse
+- Sibbling Handling
+	

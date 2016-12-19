@@ -1,0 +1,14 @@
+QUATERNION Fehler werden zur nebenzeit von TickTock geworfen! Fehler kann daher nicht pinpointed werden.
+Analysen zeigen keine auffälligkeiten bei localScale oder Rotation.
+
+
+Vermutungen:
+QUATERNION.LERP() --> die Zeitliche veränderung könnte zu nebenzeit weiterhin ausgeführt werden, wodurch es zu den besagten quaternion fehlern kommt.
+
+offene TESTS:
+
+QUATERNION.LERP ohne zeitliche verögerung wechseln lassen.
+
+
+Habe folgendes Link gefunden, welches genau den Quaternion.Lerp anspricht. Es wird empfohlen dies mit einer Sub-routine zu umgehen
+http://answers.unity3d.com/questions/14288/can-someone-explain-how-using-timedeltatime-as-t-i.html#answer-581439
